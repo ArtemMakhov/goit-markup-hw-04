@@ -6,13 +6,14 @@
 /* цвет  фона нашей команды  #F5F4FA*/
 /* цвет фона футера #2F303A */
 /* цвет с прозрачностью rgba(255, 255, 255, 0.6); */
-
+/* цвет соцсетей #AFB1B8 */
 :root {
   --primary-text-color: #757575;
   --title-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --logo-black-color: #000000;
+  --networks-icons-color: #afb1b8;
   --background-color-command: #f5f4fa;
   --background-color-footer: #2f303a;
   --border-portfolio-color: #eeeeee;
@@ -290,14 +291,35 @@ ul {
 }
 .team-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
 }
-.icon-networks {
-  width: 20px;
-  height: 20px;
+.team-icon-list {
+  display: flex;
+  padding: 0px 32px;
 }
+.networks-link {
+  display: block;
+  color: var(--networks-icons-color);
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.networks-link:hover,
+.networks-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.icon-networks {
+  fill: currentColor;
+}
+.icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* -----------FOOTER--------  */
 
 .add {
